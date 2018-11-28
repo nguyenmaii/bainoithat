@@ -1,0 +1,515 @@
+
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*
+Header css
+
+*/
+/*
+  Baner
+*/
+.header
+{
+    box-sizing: border-box;
+    height: 170px;
+    max-height: 170px;
+    padding: 50px 0;
+}
+.header .logo
+{
+}
+.header nav.menu
+{
+
+}
+.header nav.menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.header nav.menu li
+{
+    float: left;
+}
+.header nav.menu a
+{
+    display: inline-block;/* de co the dat duoc cac padding*/
+    padding: 20px;
+    color: #8d8d8d;
+    font-size: 20px;
+}
+.header nav.menu i
+{
+    color: #8d8d8d;
+    font-size: 12px;
+}
+.banner{
+    margin-top: -170px;
+    height: 936px;
+    width: 100%;
+    background: url("../images/background_header.png") top center;
+    display: table;
+}
+.banner h1
+{
+    font-size: 83px;
+    color: black;
+    display: table-cell;
+    text-align: center;/* can theo chieu ngang*/
+    vertical-align: middle;/* can theo chieu doc*/
+}
+.banner h1 span
+{
+    color: #f66c27;
+}
+/*
+footer css
+ */
+.footer{
+    background: linear-gradient(to right, #f66c27 50%, #ffffff 50%);/* chuyen mau tu trais qua.:: tao 2 mau o phan footer*/
+
+}
+.footer .contact-form{
+    background: #f66c27;
+    box-sizing: border-box;
+    height: 700px;
+}
+.contact-form .content-form{
+    background: white;
+    padding: 60px;
+    margin-top:138px;
+    margin-right:100px;
+}
+.content-form input,textarea{
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    width: 100%;
+    font-size: 15px;
+    color: #777777;
+}
+.first-row input
+{
+    width: 40%;
+}
+.first-row:after{
+    content: '';
+    clear: both;
+}
+.first-row input[name ="email"]{
+    float: right;
+}
+.content-form input[type="text"]
+{
+    padding: 5px;
+}
+.content-form input:focus,textarea:focus{
+    outline: none;
+}
+.contact-form-row
+{
+    padding: 20px;
+}
+.submit-row
+{
+    text-align: center;
+}
+.contact-form input[type="submit"]
+{
+    background: #f48146;
+    color: white;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+.footer .contact-info{
+    box-sizing: border-box;
+    height: 700px;
+    padding-left:100px;
+}
+.footer .contact-info h3
+{
+    margin-top: 108px;
+    font-size: 45px;
+}
+.line-contact-info
+{
+    padding: 20px;
+}
+.line-contact-info h4
+{
+    color:#333333;
+    font-size: 25px;
+}
+.line-contact-info p{
+    font-size: 15px;
+    max-width: 250px;
+    background: white;
+}
+.line-contact-info p span {
+    color: #f48146;
+}
+footer .social-icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #bbbbbb;
+    text-align: center;
+    color: white;
+    margin-right: 20px;
+}
+footer .social-icon i:hover{
+    background: #f48146;
+}
+/*
+  Main-content css
+ */
+.main-content
+{
+    box-sizing: border-box;
+    height: 4100px;
+    width: 100%;
+    padding-top: 100px;
+}
+.main-content .container
+{
+    height: 450px;
+    padding: 0px;
+}
+
+.main-content .container .image
+{
+    box-sizing: border-box;
+}
+.main-content .container .image .below img
+{
+    max-width: 625px;
+    max-height: 500px;
+}
+.main-content .container .image .under
+{
+    position: absolute;
+    padding-left: 50px;
+}
+.main-content .container .image .under img
+{
+    margin-top: -180px;
+    margin-left: 260px;
+    max-width: 317px;
+}
+.main-content .container .infomation
+{
+    box-sizing: border-box;
+    height: 450px;
+    padding-left:80px;
+}
+.infomation .titel h3
+{
+    max-width:320px ;
+    color: #222222;
+    font-size: 45px;
+}
+.infomation .menu-main
+{
+    padding-top: 50px;
+    height: 100px;
+}
+.infomation .menu-main ul li {
+    color: #ff7b38;
+    font-size: 25px;
+    list-style: none;
+    float: left;
+    padding-right: 55px;
+}
+.infomation .infomations p
+{
+    color: #888888;
+    font-size: 15px;
+    max-width: 580px;
+}
+.infomation .readmore
+{
+    padding-top: 70px;
+}
+.infomation .readmore input[type="submit"]
+{
+    background: #f48146;
+    color: white;
+    display: inline-block;
+    width: 180px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+.help
+{
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left:100px
+}
+.help h3
+{
+    box-sizing: border-box;
+    font-size: 45px;
+    color: #000000;
+}
+.main-content .help .container
+{
+    padding-top:60px ;
+}
+.main-content .help .image1
+{
+    box-sizing: border-box;
+    width: 350px;
+    height:375px;
+    background: #eeeded;
+}
+.image1 div
+{
+    text-align: center;
+}
+.image1 h5
+{
+    font-size: 25px;
+    color: #333333;
+    text-align: center;
+}
+.image1 p
+{
+    padding-left: 40px;
+    font-size: 15px;
+    color: #888888;
+    text-align: center;
+    max-width: 320px;
+}
+.image1 div i
+{
+    padding-top: 80px;
+}
+.main-content .help .image2
+{
+    box-sizing: border-box;
+    width: 350px;
+    height:375px;
+    background: #ffffff;
+    margin-left: 25px;
+    box-shadow: 20px 20px 20px #eeeded;
+}
+.image2 .icon
+{
+    color: red;
+}
+.image2 div
+{
+    text-align: center;
+}
+.image2 h5
+{
+    font-size: 25px;
+    color: #333333;
+    text-align: center;
+}
+.image2 p
+{
+    padding-left: 40px;
+    font-size: 15px;
+    color: #888888;
+    text-align: center;
+    max-width: 320px;
+}
+.image2 div i
+{
+    padding-top: 80px;
+}
+.main-content .help .image3
+{
+    box-sizing: border-box;
+    width: 350px;
+    height:375px;
+    background: #eeeded;
+    margin-left: 50px;
+}
+.image3 div
+{
+    text-align: center;
+}
+.image3 h5
+{
+    font-size: 25px;
+    color: #333333;
+    text-align: center;
+}
+.image3 p
+{
+    padding-left: 40px;
+    font-size: 15px;
+    color: #888888;
+    text-align: center;
+    max-width: 320px;
+}
+.image3 div i
+{
+    padding-top: 80px;
+}
+.map h3
+{
+    font-size: 45px;
+    color: #000000;
+    text-align: center;
+}
+
+.map p
+{
+    font-size: 15px;
+    color: #888888;
+    max-width: 1170px;
+    text-align: center;
+    padding-left: 240px;
+    padding-top:60px;
+}
+.map
+{
+    box-sizing: border-box;
+    width: 100%;
+    height:950px;
+    display: table;
+    padding-top: 150px;
+}
+.map img
+{
+    max-width:100%;
+    max-height: 700px;
+    padding-left: 100px;
+}
+.need-info
+{
+    background: url("../images/background_needinfo.png") ;
+    width: 100%;
+    height: 360px;
+}
+.line-under h3
+{
+    padding-top: 95px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+.info1
+{
+    box-sizing: border-box;
+    padding-top: 95px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+
+}
+.need-info
+{
+    margin-top: 150px;
+}
+.line1
+{
+    text-align: center;
+}
+.line1 input[name ="email"]{
+    width: 510px;
+    height: 60px;
+    border-radius: 40px;
+    border: #f48146;
+    margin-right: 30px;
+    padding-left: 50px;
+}
+.line1 input[type="submit"]
+{
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #814a2f;
+    background: #f48146;
+    color: white;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    border: #f48146;
+    font-size: 18px;
+    width: 185px;
+    height: 60px;
+}
+.say
+{
+    box-sizing: border-box;
+    padding-top: 100px;
+    width: 100%;
+    height: 590px;
+    background: url("../images/background_say.png");
+}
+.say h1
+{
+    color: #010101;
+    font-size: 45px;
+    text-align: center;
+}
+.say .line2
+{
+    text-align: center;
+    padding-top: 50px;
+}
+.say p
+{
+    color: #888888;
+    font-size: 15px;
+    text-align: center;
+    margin-left:300px ;
+    max-width: 820px;
+}
+.box1
+{
+    text-align: center;
+    padding-top: 30px;
+}
+.say .signature span
+{
+    color: #faa47d;
+    font-size: 17px;
+}
+.signature1{
+    padding-top: 15px;
+    color: #8c8c8c;
+    font-size: 15px;
+}
+.project .info h1
+{
+    color: black;
+    font-size: 45px;
+}
+.project .info p
+{
+    color: #888888;
+}
+.project .info span
+{
+    color: #f48146;
+    font-size: 15px;
+}
+.project .info input[type="submit"]
+{
+    background: #f48146;
+    color: white;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+    border: #f48146;
+    box-shadow: 5px 5px 5px #e6e5e5;
+
+}
